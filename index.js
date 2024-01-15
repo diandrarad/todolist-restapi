@@ -3,7 +3,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = 3000;
 
 // MongoDB Connection
 mongoose.connect('mongodb+srv://admin:WZlX1datrVf3pUXX@todolistapi.lrywl97.mongodb.net/?retryWrites=true&w=majority');
