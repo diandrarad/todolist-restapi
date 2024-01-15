@@ -29,12 +29,12 @@ Register (Create a new user)
 * **Description:** Creates a new user.
 * **Request:**
     * Body:
-```
-{
-    "username": "example",
-    "password": "password123"
-}
-```
+    ```
+      {
+          "username": "example",
+          "password": "password123"
+      }
+      ```
 * **Response:**
     * Status Code: **201 Created**
     * Body:
