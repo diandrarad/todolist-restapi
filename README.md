@@ -29,137 +29,137 @@ Register (Create a new user)
 * **Description:** Creates a new user.
 * **Request:**
     * Body:
-       ```
-         {
-             "username": "example",
-             "password": "password123"
-         }
-       ```
+      ```
+      {
+          "username": "example",
+          "password": "password123"
+      }
+      ```
 * **Response:**
     * Status Code: **201 Created**
     * Body:
-```
-{
-    "user": {
-        "_id": "user_id_here",
-        "username": "example",
-        "password": "hashed_password_here",
-        "__v": 0
-    },
-    "token": "jwt_token_here"
-}
-```
+      ```
+      {
+          "user": {
+              "_id": "user_id_here",
+              "username": "example",
+              "password": "hashed_password_here",
+              "__v": 0
+          },
+          "token": "jwt_token_here"
+      }
+      ```
 Login
 * **Endpoint: POST /api/users/login**
 * **Description:** Logs in an existing user.
 * **Request:**
     * Body:
-```
-{
-    "username": "example",
-    "password": "password123"
-}
-```
+      ```
+      {
+          "username": "example",
+          "password": "password123"
+      }
+      ```
 * **Response:**
     * Status Code: **200 OK**
     * Body:
-```
-{
-    "user": {
-        "_id": "user_id_here",
-        "username": "example",
-        "password": "hashed_password_here",
-        "__v": 0
-    },
-    "token": "jwt_token_here"
-}
-```
+      ```
+      {
+          "user": {
+              "_id": "user_id_here",
+              "username": "example",
+              "password": "hashed_password_here",
+              "__v": 0
+          },
+          "token": "jwt_token_here"
+      }
+      ```
 ### ToDo Operations
 Create a new todo
 * **Endpoint: POST /api/todos**
 * **Description:** Creates a new todo.
 * **Request:**
     * Body:
-```
-{
-    "title": "New Todo",
-    "description": "Description of the new todo"
-}
-```
+      ```
+      {
+          "title": "New Todo",
+          "description": "Description of the new todo"
+      }
+      ```
 * **Response:**
     * Status Code: **201 Created**
     * Body:
-```
-{
-    "_id": "todo_id_here",
-    "title": "New Todo",
-    "description": "Description of the new todo",
-    "user": "user_id_here",
-    "__v": 0
-}
-```
+      ```
+      {
+          "_id": "todo_id_here",
+          "title": "New Todo",
+          "description": "Description of the new todo",
+          "user": "user_id_here",
+          "__v": 0
+      }
+      ```
 View all todos
 * **Endpoint: GET /api/todos**
 * **Description:** Retrieves all todos for the authenticated user.
 * **Response:**
     * Status Code: **200 OK**
     * Body:
-```
-[
-    {
-        "_id": "todo_id_here",
-        "title": "Todo 1",
-        "description": "Description of Todo 1",
-        "user": "user_id_here",
-        "__v": 0
-    },
-    {
-        "_id": "todo_id_here",
-        "title": "Todo 2",
-        "description": "Description of Todo 2",
-        "user": "user_id_here",
-        "__v": 0
-    }
-]
-```
+      ```
+      [
+          {
+              "_id": "todo_id_here",
+              "title": "Todo 1",
+              "description": "Description of Todo 1",
+              "user": "user_id_here",
+              "__v": 0
+          },
+          {
+              "_id": "todo_id_here",
+              "title": "Todo 2",
+              "description": "Description of Todo 2",
+              "user": "user_id_here",
+              "__v": 0
+          }
+      ]
+      ```
 View todo details
 * **Endpoint: GET /api/todos/:id**
 * **Description:** Retrieves details of a specific todo.
 * **Response:**
     * Status Code: **200 OK**
     * Body:
-```
-{
-    "_id": "todo_id_here",
-    "title": "Todo 1",
-    "description": "Description of Todo 1",
-    "user": "user_id_here",
-    "__v": 0
-}
-```
+      ```
+      {
+          "_id": "todo_id_here",
+          "title": "Todo 1",
+          "description": "Description of Todo 1",
+          "user": "user_id_here",
+          "__v": 0
+      }
+      ```
 Update todo
 * **Endpoint: PATCH /api/todos/:id**
 * **Description:** Updates details of a specific todo.
 * **Request:**
     * Body:
-```
-{
-    "title": "Updated Todo",
-    "description": "Updated description"
-}
-```
+      ```
+      {
+          "title": "Updated Todo",
+          "description": "Updated description"
+      }
+      ```
 * **Response:**
     * Status Code: **200 OK**
     * Body:
-```
-{
-    "_id": "todo_id_here",
-    "title": "Updated Todo",
-    "description": "Updated description",
-    "user": "user_id_here",
-    "__v": 0
-}
-```
+      ```
+      {
+          "_id": "todo_id_here",
+          "title": "Updated Todo",
+          "description": "Updated description",
+          "user": "user_id_here",
+          "__v": 0
+      }
+      ```
 Delete todo
 * **Endpoint: DELETE /api/todos/:id**
 * **Description:** Deletes a specific todo.
