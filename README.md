@@ -165,6 +165,7 @@ Delete todo
 * **Description:** Deletes a specific todo.
 * **Response:**
     * Status Code: **204 No Content**
+
 Delete all todos
 * **Endpoint: DELETE /api/todos**
 * **Description:** Deletes all todos for the authenticated user.
