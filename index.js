@@ -6,7 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // MongoDB Connection
-mongoose.connect('mongodb://localhost:27017/todolist');
+mongoose.connect('mongodb+srv://admin:WZlX1datrVf3pUXX@todolistapi.lrywl97.mongodb.net/?retryWrites=true&w=majority');
 mongoose.connection.on('connected', () => {
   console.log('Connected to MongoDB');
 });
