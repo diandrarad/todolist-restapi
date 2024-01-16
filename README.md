@@ -9,7 +9,7 @@ The web service and RESTful API are deployed on Render. You can access it [here]
 ## Specifications
 * Express.js is used for building the web service and RESTful API.
 * Supports standard CRUD operations for a ToDoList.
-* Database options: MySQL (using sequelize-cli) or MongoDB (using mongoose).
+* Database management used: MongoDB (using mongoose).
 * Endpoints for:
     * Create a new user (Register)
     * Login
