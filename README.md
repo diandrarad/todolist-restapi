@@ -21,6 +21,12 @@ The web service and RESTful API are deployed on Render. You can access it [here]
     * Delete all todos
 * Implements authentication and authorization.
 * Appropriate response codes are used.
+* Set Headers:
+
+Click on the "Headers" tab.
+Add a new header:
+Key: Content-Type
+Value: application/json
 
 ## Endpoints
 ### User Management
